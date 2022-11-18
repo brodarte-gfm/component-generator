@@ -1,0 +1,9 @@
+import React from "react";
+import { $$COMPONENT_NAME } from ".";
+
+describe("<$$COMPONENT_NAME />", () => {
+  it("renders expected elements", () => {
+    cy.mount(<$$COMPONENT_NAME />);
+    cy.findByText("$$COMPONENT_NAME").should("be.visible");
+  });
+});
